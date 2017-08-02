@@ -40,6 +40,22 @@ public class GameTest {
         assertEquals("java", testGame.selectWord(index));
     }
 
+
+    @Test
+    public void selectRandomIndex_randomIndex_int() throws Exception {
+        Game testGame = new Game();
+        int expectedOutput = testGame.
+        assertEquals(ourWords[index], testGame.selectRandomIndex());
+    }
+    @Test
+    public void selectRandom_selectWordRandomly_word() throws Exception {
+        String [] ourWords = {"cake", "java"};
+        int index = Game.selectRandomIndex();
+        Game testGame = new Game(ourWords[index]);
+        assertEquals(ourWords[index], testGame.selectRandomIndex());
+    }
+
+
 //    @Test
 //    public void randomWord_randomOutput_randomWordOutput() throws Exception {
 //        Game testGame = new Game(String stringInput);
